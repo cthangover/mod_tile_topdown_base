@@ -1,0 +1,9 @@
+{
+  "options": [
+    {
+      "key": "tile.renderer",
+      "value": "topdown",
+      "name": "collection_settings/topdown"
+    }
+  ]
+}

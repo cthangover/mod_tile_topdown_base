@@ -1,0 +1,17 @@
+{
+  "id": "tile_topdown_base",
+  "name": "Top-down Tiles",
+  "version": "1.0.0",
+  "author": "ct",
+  "description": "Draws tile maps straight from above, on a square grid, in the style of classic 2D RPGs. One of the two views of Tile Rendering; RPG Plus uses it.",
+  "category": "visual, engine",
+  "sources": [
+    "src/**/*.cs"
+  ],
+  "test_sources": [
+    "tests/*.cs"
+  ],
+  "depends": [
+    "tile_render_base>=1"
+  ]
+}
