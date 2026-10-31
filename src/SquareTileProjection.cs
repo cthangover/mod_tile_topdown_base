@@ -12,6 +12,6 @@ namespace Cthangover.Mods.TileTopdown
         public int CharsetRow(int facing) => facing;
         public TileVisualPlacement Place(TileVisual visual)
             => TileVisualPlacement.FromQuad(TileDrawing.CellPolygon(this, visual.Bounds),
-                TileDrawing.Project(this, visual.Anchor), false);
+                TileDrawing.Project(this, visual.SortAnchor ?? visual.Anchor), visual.DrawOrder == TileDrawOrder.ByPosition);
     }
 }
