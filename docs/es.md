@@ -6,11 +6,11 @@ Top-down Tiles dibuja los mapas de tiles directamente desde arriba, sobre una cu
 
 ## Qué cambia y qué no
 
-Este mod solo decide **cómo una casilla del mapa se convierte en píxeles en pantalla**: cada casilla es un cuadrado del tamaño del tile del tileset, y un objeto elevado se dibuja más arriba en pantalla sin cambiar de casilla.
+El mod convierte casillas en píxeles. Cada casilla es un cuadrado del `TileSize` del mapa (32 píxeles por defecto). Las imágenes y la geometría se definen en `rpg_object`; la altura no cambia la casilla lógica.
 
 Todo lo demás pertenece a otros mods y no cambia al alternar de vista:
 
-- **el mapa y su contenido** — tiles, edificios, gente, cofres — vienen de mods de contenido (por ejemplo RPG Demo y Village Pack);
+- **el mapa y su contenido** — tiles, edificios, gente, cofres — vienen de mods de contenido (por ejemplo RPG Plus y Village Pack);
 - **caminar, colisiones, eventos, combates y guardado** corresponden al mod RPG y usan la misma cuadrícula en ambas vistas;
 - **el dibujo, la iluminación y la hora del día** los hace Tile Rendering.
 

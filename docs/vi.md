@@ -6,11 +6,11 @@ Top-down Tiles vẽ các bản đồ ô thẳng từ trên xuống, trên lướ
 
 ## Thay đổi gì, không đổi gì
 
-Mod này chỉ quyết định **một ô bản đồ biến thành điểm ảnh trên màn hình như thế nào**: mỗi ô là một hình vuông đúng cỡ ô của tileset, còn vật thể được nhô lên sẽ vẽ cao hơn trên màn hình nhưng vẫn nằm đúng ô của nó.
+Mod ánh xạ ô thành điểm ảnh. Mỗi ô là hình vuông theo `TileSize` của bản đồ (mặc định 32 pixel). Hình và hình học nằm trong `rpg_object`; độ cao không đổi ô logic.
 
 Mọi thứ còn lại thuộc về các mod khác và không đổi khi chuyển chế độ xem:
 
-- **bản đồ và nội dung của nó** — ô, nhà cửa, con người, rương — đến từ các mod nội dung (ví dụ RPG Demo và Village Pack);
+- **bản đồ và nội dung của nó** — ô, nhà cửa, con người, rương — đến từ các mod nội dung (ví dụ RPG Plus và Village Pack);
 - **đi lại, va chạm, sự kiện, chiến đấu và save** thuộc về mod RPG, dùng cùng một lưới ở cả hai chế độ;
 - **vẽ, chiếu sáng và thời gian trong ngày** do Tile Rendering đảm nhiệm.
 

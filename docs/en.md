@@ -6,11 +6,11 @@ Top-down Tiles draws tile maps straight from above, on a square grid, in the sty
 
 ## What changes and what does not
 
-This mod only decides **how a map cell becomes pixels on screen**: each cell is a square of the tileset's tile size, and a raised object is drawn higher on screen without changing its cell.
+This mod maps cells to screen pixels. A cell is a square of the map's `TileSize` (32 pixels by default). Object images and geometry come from `rpg_object` definitions; their height does not change their logical cell.
 
 Everything else is owned by other mods and does not change when you switch views:
 
-- **the map and its content** — tiles, buildings, people, chests — come from content mods (for example RPG Demo and Village Pack);
+- **the map and its content** — tiles, buildings, people, chests — come from content mods (for example RPG Plus and Village Pack);
 - **walking, collisions, events, battles and saves** belong to the RPG mod and use the same grid in both views;
 - **drawing, lighting and time of day** are done by Tile Rendering.
 
