@@ -9,6 +9,8 @@ namespace Cthangover.Mods.TileTopdown
         public SquareTileProjection(int size) { Unit = size > 0 ? size : throw new System.ArgumentOutOfRangeException(nameof(size)); }
         public Vector2 Project(Vector3 p) => new(p.X * Unit, (p.Y - p.Z) * Unit);
         public Vector2 Unproject(Vector2 p) => p / Unit;
+        /// <summary>Square cells: the bottom-centre anchor already is the cell's ground point.</summary>
+        public Vector2 ActorAnchor(Vector2 anchor) => anchor;
         public int CharsetRow(int facing) => facing;
         public TileVisualPlacement Place(TileVisual visual)
             => TileVisualPlacement.FromQuad(TileDrawing.CellPolygon(this, visual.Bounds),
